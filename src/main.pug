@@ -1,0 +1,18 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset="utf-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1, shrink-to-fit=no")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title 360-degree-product-Image-viewer-experiment
+    link(rel="stylesheet", href="dist/css/main.css")
+  body
+    .gallery_container
+      .hover_area
+        ul
+          each data_src in ["https://goo.gl/kbvz8w", "https://goo.gl/BXdkcE", "https://goo.gl/DCxBy1", "https://goo.gl/iNRck4", "https://goo.gl/VszeWF", "https://goo.gl/qyB8Ar", "https://goo.gl/AqAjKr"]
+            li(data-src = data_src)
+      .viewer
+        img(src="https://goo.gl/kbvz8w", alt="")#view_img
+    h3 hover over the photo left to right & right to left
+    script(src="dist/js/main-dist.js")

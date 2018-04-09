@@ -1,2 +1,41 @@
+.gallery_container {
+  max-width: 800px;
+  height: auto;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.gallery_container .hover_area {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.gallery_container .hover_area ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.gallery_container .hover_area ul li {
+  height: 100vh;
+  list-style: none;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.gallery_container .viewer img {
+  width: 100%;
+}
+
+h3 {
+  color: #555;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+}
 
 /*# sourceMappingURL=main.css.map */
